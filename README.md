@@ -1,51 +1,57 @@
 # 1 Woodland Drive Website
 
-Static property website for 1 Woodland Drive, Augusta, Kansas.
+Astro-powered static property website for 1 Woodland Drive, Augusta, KS.
 
-## Local project folder
-
-`/Users/kirkk/Documents/1 Woodland Drive/1woodlanddrive_website`
-
-## Deployment
-
-This site is deployed with Cloudflare Pages from the GitHub repository `kirkk/1WoodlandDrive`.
-
-Cloudflare Pages settings:
-
-- Framework preset: None
-- Build command: blank
-- Build output directory: repository root
-- Root directory: repository root
-
-## Updating the site
-
-1. Copy changed files into the local repo folder.
-2. Run:
+## Local development
 
 ```bash
-git status
-git add .
-git commit -m "Update property website"
-git push
+npm install
+npm run dev
 ```
 
-Cloudflare Pages will automatically deploy the updated site after the push.
+## Production build
 
-## Important configuration
+```bash
+npm run build
+```
 
-Most site-wide property details are in:
+The built static site is output to `dist/`.
 
-`assets/js/property.js`
+## Cloudflare Pages settings
 
-Update that file to change contact email, status, site URL, property details, or gallery images.
+Use these settings in Cloudflare Pages:
 
-## Photos
+- Framework preset: `Astro`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: `/`
+- Production branch: `main`
 
-Current photo folders:
+## Updating property details
 
-- `assets/images/hero`
-- `assets/images/exterior`
-- `assets/images/interior`
-- `assets/images/shop`
+Edit:
 
-When professional photos are ready, add them to the appropriate folder and update `assets/js/property.js`.
+```text
+src/data/property.js
+```
+
+That file controls contact email, status, highlights, and the gallery image list.
+
+## Updating images
+
+Place photos in:
+
+```text
+public/assets/images/
+```
+
+Then update the gallery list in `src/data/property.js`.
+
+## Version 1.1 updates
+
+- Corrected gallery labels:
+  - Twilight front elevation -> Street View Exterior
+  - Detached shop and driveway -> Twilight Front Elevation
+  - Street view exterior -> Detached Garage/Shop and Attached Garage
+- Replaced combined home/shop exterior image with the updated evening photo.
+- Updated property hero and social preview image to use the updated combined exterior photo.

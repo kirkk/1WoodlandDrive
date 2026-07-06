@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+---
+<BaseLayout title="The Shop">
+  <section class="hero compact" style={`--hero-image: url('/assets/images/shop/shop-and-home-evening.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Shop & garage</p><h1>More than a garage.</h1></div></section>
+  <section class="section-wrap">
+    <div class="split">
+      <div>
+        <SectionHeader eyebrow="Detached climate-controlled shop" title="A serious space for cars, projects, storage, and possibilities." text="The shop is visually integrated with the property and offers the kind of flexible square footage that is difficult to duplicate." />
+        <p>Fully insulated, drywalled, climate controlled, and equipped with a bathroom, this structure can serve a car collector, hobbyist, small business owner, woodworker, fitness enthusiast, or anyone who needs serious functional space.</p>
+        <ul class="check-list">
+          <li>Climate controlled</li><li>Bathroom</li><li>Fully drywalled and insulated</li><li>Room for 6+ vehicles</li><li>Workshop potential</li><li>Separate mower/storage bay</li><li>Sidewalk connection to residence</li><li>Designed to complement the home</li>
+        </ul>
+      </div>
+      <div class="image-card"><img src="/assets/images/shop/street-view-shop.jpeg" alt="Detached shop at 1 Woodland Drive" loading="lazy" /></div>
+    </div>
+  </section>
+</BaseLayout>

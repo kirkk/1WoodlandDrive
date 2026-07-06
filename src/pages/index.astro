@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { property } from '../data/property.js';
+---
+<BaseLayout>
+  <Hero />
+  <section class="section-wrap">
+    <div class="split">
+      <div>
+        <SectionHeader eyebrow="Welcome home" title="A timeless ranch, thoughtfully transformed." text="Built in 1974 and extensively remodeled, this custom ranch combines the strength and character of established construction with the comfort, finish, and convenience expected today." />
+        <p>Set on a beautifully maintained one-acre lot in Augusta, the home offers updated living spaces, a fully remodeled kitchen, fresh interior and exterior finishes, bonus finished lower-level space, and outdoor areas designed for gathering.</p>
+        <p>The rare detached climate-controlled shop is a defining feature, offering exceptional flexibility for vehicles, hobbies, business use, storage, or a future studio-style retreat.</p>
+        <div class="actions"><a class="button secondary" href="/property/">Explore the Property</a><a class="button" href="/contact/">Request Details</a></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>1</strong><span>Acre lot</span></div>
+        <div class="stat"><strong>2,700</strong><span>Approx. sq ft</span></div>
+        <div class="stat"><strong>1974</strong><span>Built</span></div>
+        <div class="stat"><strong>6+</strong><span>Vehicle shop capacity</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="dark-band">
+    <div class="section-wrap">
+      <SectionHeader eyebrow="Property highlights" title="Move-in ready, with the hard work already done." text="This is more than cosmetic refresh. The home, landscape, systems, and outbuilding have been improved with long-term livability in mind." />
+      <div class="grid three">
+        <div class="feature-card"><h3>Remodeled Kitchen</h3><p>Solid-surface counters, new appliances, updated cabinetry, and a modernized main living flow.</p></div>
+        <div class="feature-card"><h3>Finished Lower Level</h3><p>Bonus square footage including an office with adjoining private bath.</p></div>
+        <div class="feature-card"><h3>Outdoor Living</h3><p>Professional lawn care, irrigation from a private well, landscape lighting, and fire pit area.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-wrap">
+    <div class="split">
+      <div class="image-card"><img src="/assets/images/shop/street-view-shop.jpeg" alt="Detached Garage/Shop and Attached Garage at 1 Woodland Drive" loading="lazy" /></div>
+      <div>
+        <SectionHeader eyebrow="The shop" title="A rare detached shop that changes what this property can be." text="Designed to visually complement the residence, the detached shop offers climate-controlled, insulated, drywalled space with a bathroom, multiple garage bays, and a separate mower/storage bay." />
+        <a class="button secondary" href="/shop/">See the Shop</a>
+      </div>
+    </div>
+  </section>
+  <section class="section-wrap">
+    <div class="cta">
+      <div><p class="eyebrow">Coming soon</p><h2>Professional photography is next.</h2><p>The current gallery uses early exterior images. Full professional exterior and interior photography will replace these images soon.</p></div>
+      <a class="button" href="/gallery/">View Current Gallery</a>
+    </div>
+  </section>
+</BaseLayout>

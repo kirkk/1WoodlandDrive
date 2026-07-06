@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { property } from '../data/property.js';
+---
+<BaseLayout title="Gallery">
+  <section class="section-wrap" style="padding-top: 9rem;">
+    <SectionHeader eyebrow="Gallery" title="Current preview images." text="These early exterior photos will be replaced with professional photography soon." />
+    <div class="gallery-grid">
+      {property.gallery.map((image) => (
+        <a class="gallery-item" href={image.src} target="_blank">
+          <img src={image.src} alt={image.title} loading="lazy" />
+          <div><span>{image.category}</span><strong>{image.title}</strong></div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

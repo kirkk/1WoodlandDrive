@@ -1,0 +1,15 @@
+---
+import { property } from '../data/property.js';
+---
+<section class="hero" style={`--hero-image: url('${property.heroImage}')`}>
+  <div class="hero-overlay"></div>
+  <div class="hero-content section-wrap">
+    <p class="eyebrow">{property.status} · {property.city}, {property.state}</p>
+    <h1>Beautifully Renovated Custom Ranch on One Acre</h1>
+    <p class="hero-lede">Timeless 1974 construction, extensively updated for modern living, with a rare detached climate-controlled shop designed for collectors, hobbyists, and exceptional storage.</p>
+    <div class="hero-actions">
+      <a class="button" href="/gallery/">View Gallery</a>
+      <a class="button ghost" href="/shop/">Explore the Shop</a>
+    </div>
+  </div>
+</section>

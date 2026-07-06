@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { property } from '../data/property.js';
+---
+<BaseLayout title="Contact">
+  <section class="section-wrap" style="padding-top: 9rem;">
+    <div class="split">
+      <div>
+        <SectionHeader eyebrow="Contact" title="Request details or schedule a showing." text="Use the placeholder contact below for now. This can be updated in one place when final listing contact details are ready." />
+        <p><strong>Email:</strong> <a href={`mailto:${property.contactEmail}`}>{property.contactEmail}</a></p>
+      </div>
+      <div class="card">
+        <h3>{property.name}</h3>
+        <p>{property.city}, {property.state} {property.zip}</p>
+        <p>Status: {property.status}</p>
+        <a class="button" href={`mailto:${property.contactEmail}?subject=1 Woodland Drive Inquiry`}>Email About This Property</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

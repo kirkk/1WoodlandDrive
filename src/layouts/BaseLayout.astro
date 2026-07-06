@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import { property, navItems } from '../data/property.js';
+const { title, description = 'A beautifully renovated custom ranch on one acre in Augusta, Kansas with a rare detached climate-controlled shop.' } = Astro.props;
+const pageTitle = title ? `${title} | ${property.name}` : `${property.name} | Renovated Custom Ranch in Augusta, Kansas`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://1woodlanddrive.com')} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://1woodlanddrive.com/assets/images/shop/shop-and-home-evening.jpeg" />
+    <meta name="theme-color" content="#1f2326" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="/">
+        <span class="brand-mark">1</span>
+        <span><strong>{property.name}</strong><small>{property.city}, {property.state}</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>Menu</button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <h2>{property.name}</h2>
+        <p>{property.city}, {property.state} {property.zip}</p>
+      </div>
+      <div>
+        <p>{property.status}</p>
+        <a href={`mailto:${property.contactEmail}`}>{property.contactEmail}</a>
+      </div>
+    </footer>
+    <script is:inline>
+      const toggle = document.querySelector('[data-menu-toggle]');
+      const nav = document.querySelector('[data-nav]');
+      toggle?.addEventListener('click', () => {
+        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        nav?.classList.toggle('is-open');
+      });
+      const header = document.querySelector('[data-header]');
+      const onScroll = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    </script>
+  </body>
+</html>

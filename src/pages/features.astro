@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import { property } from '../data/property.js';
+---
+<BaseLayout title="Features & Improvements">
+  <section class="hero compact" style={`--hero-image: url('/assets/images/exterior/garage-evening.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Features & improvements</p><h1>Upgrades that automated valuations do not capture.</h1></div></section>
+  <section class="section-wrap">
+    <SectionHeader eyebrow="Improvement story" title="Renovated, maintained, and prepared for the next owner." text="The property's value is not just in square footage. It is in the quality of updates, the shop, the land, and the long-term maintenance already performed." />
+    <div class="grid three">
+      {property.highlights.map((item) => <div class="feature-card"><h3>{item}</h3></div>)}
+    </div>
+  </section>
+</BaseLayout>
