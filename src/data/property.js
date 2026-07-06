@@ -10,7 +10,7 @@ export const property = {
   squareFeet: 'Approx. 2,700 sq ft',
   contactEmail: 'rita@ritabagby.com',
   contactPhone: '',
-  heroImage: '/assets/images/shop/shop-and-home-evening.jpeg',
+  heroImage: '/assets/images/hero/shop-and-home-evening.jpeg',
   highlights: [
     'Beautifully remodeled custom ranch',
     'Finished lower level with office and adjoining private bath',
@@ -26,10 +26,90 @@ export const property = {
     'One-year deluxe home warranty included'
   ],
   gallery: [
-    { src: '/assets/images/hero/twilight-front.jpeg', title: 'Street View Exterior', category: 'Exterior' },
-    { src: '/assets/images/shop/shop-and-home-evening.jpeg', title: 'Twilight Front Elevation', category: 'Exterior' },
-    { src: '/assets/images/shop/street-view-shop.jpeg', title: 'Detached Garage/Shop and Attached Garage', category: 'Shop & Garage' },
-    { src: '/assets/images/exterior/garage-evening.jpeg', title: 'Garage and Drive Approach', category: 'Exterior' }
+    {
+      src: '/assets/images/exterior/shop-and-home-evening.jpeg',
+      title: 'Twilight Front Elevation',
+      category: 'Exterior & Grounds',
+      alt: 'Twilight exterior view of 1 Woodland Drive showing the home, attached garage, and detached shop'
+    },
+    {
+      src: '/assets/images/shop/street-view-shop.jpeg',
+      title: 'Detached Garage/Shop and Attached Garage',
+      category: 'Shop & Garage',
+      alt: 'Street view showing the detached garage shop and attached garage at 1 Woodland Drive'
+    },
+    {
+      src: '/assets/images/hero/twilight-front.jpeg',
+      title: 'Street View Exterior',
+      category: 'Exterior & Grounds',
+      alt: 'Street view exterior of the renovated ranch home at 1 Woodland Drive'
+    },
+    {
+      src: '/assets/images/living/formal-living-room.jpeg',
+      title: 'Formal Living Room',
+      category: 'Living Areas',
+      alt: 'Staged formal living room with neutral finishes and modern lighting'
+    },
+    {
+      src: '/assets/images/bedrooms/primary-suite-bed.jpeg',
+      title: 'Primary Suite',
+      category: 'Primary Suite',
+      alt: 'Primary bedroom with dark green accent wall and upholstered bed'
+    },
+    {
+      src: '/assets/images/bedrooms/primary-suite-window-view.jpeg',
+      title: 'Primary Suite Sitting Area',
+      category: 'Primary Suite',
+      alt: 'Primary bedroom sitting area with large windows and mirrored closet doors'
+    },
+    {
+      src: '/assets/images/bedrooms/primary-suite-sitting-area.jpeg',
+      title: 'Primary Suite Retreat',
+      category: 'Primary Suite',
+      alt: 'Primary suite sitting area with direct access to the adjoining bathroom'
+    },
+    {
+      src: '/assets/images/bathrooms/primary-bath-vanity.jpeg',
+      title: 'Primary Bath Vanity',
+      category: 'Bathrooms',
+      alt: 'Primary bathroom vanity with framed mirror and built-in shelving'
+    },
+    {
+      src: '/assets/images/bathrooms/primary-bath-shower.jpeg',
+      title: 'Primary Bath Shower',
+      category: 'Bathrooms',
+      alt: 'Primary bathroom with shower, vanity, and updated styling'
+    },
+    {
+      src: '/assets/images/bedrooms/guest-bedroom.jpeg',
+      title: 'Guest Bedroom',
+      category: 'Bedrooms',
+      alt: 'Staged guest bedroom with neutral carpet and curtains'
+    },
+    {
+      src: '/assets/images/bedrooms/guest-bedroom-alt.jpeg',
+      title: 'Guest Bedroom Detail',
+      category: 'Bedrooms',
+      alt: 'Guest bedroom alternate angle with bed, dresser, and mirror'
+    },
+    {
+      src: '/assets/images/bedrooms/guest-bedroom-closet.jpeg',
+      title: 'Guest Bedroom Closet',
+      category: 'Bedrooms',
+      alt: 'Guest bedroom closet with updated white doors and black hardware'
+    },
+    {
+      src: '/assets/images/bathrooms/guest-bath-vanity.jpeg',
+      title: 'Guest Bath',
+      category: 'Bathrooms',
+      alt: 'Updated guest bathroom with white vanity, patterned feature wall, and tub shower'
+    },
+    {
+      src: '/assets/images/exterior/garage-evening.jpeg',
+      title: 'Attached Garage Entry',
+      category: 'Exterior & Grounds',
+      alt: 'Evening view of the attached garage and driveway'
+    }
   ]
 };
 

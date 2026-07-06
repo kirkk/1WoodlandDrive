@@ -46,12 +46,3 @@ public/assets/images/
 ```
 
 Then update the gallery list in `src/data/property.js`.
-
-## Version 1.1 updates
-
-- Corrected gallery labels:
-  - Twilight front elevation -> Street View Exterior
-  - Detached shop and driveway -> Twilight Front Elevation
-  - Street view exterior -> Detached Garage/Shop and Attached Garage
-- Replaced combined home/shop exterior image with the updated evening photo.
-- Updated property hero and social preview image to use the updated combined exterior photo.

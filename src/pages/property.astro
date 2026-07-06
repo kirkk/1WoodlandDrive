@@ -4,13 +4,13 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { property } from '../data/property.js';
 ---
 <BaseLayout title="Property Overview" description="Property overview for 1 Woodland Drive in Augusta, Kansas.">
-  <section class="hero compact" style={`--hero-image: url('/assets/images/shop/shop-and-home-evening.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Property overview</p><h1>Classic ranch comfort with modern updates.</h1></div></section>
+  <section class="hero compact" style={`--hero-image: url('/assets/images/hero/shop-and-home-evening.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Property overview</p><h1>Classic ranch comfort with modern updates.</h1></div></section>
   <section class="section-wrap">
     <div class="split">
       <div>
         <SectionHeader eyebrow="The residence" title="Built to last. Updated to enjoy." text="This traditional ranch has stood the test of time and has now been refreshed for the next chapter." />
         <p>The home includes approximately 2,700 square feet plus bonus finished lower-level space. The main level features a fully remodeled kitchen, new appliances, main-floor laundry, fresh finishes, and an easy everyday layout.</p>
-        <p>The lower level adds flexibility with finished living area, an office, and an adjoining private bath.</p>
+        <p>New staged photos now highlight the primary suite, living areas, guest bedroom, and updated bathrooms while the site awaits final professional photography.</p>
       </div>
       <div class="card">
         <ul class="check-list">
@@ -24,6 +24,12 @@ import { property } from '../data/property.js';
           <li>Home warranty included</li>
         </ul>
       </div>
+    </div>
+  </section>
+  <section class="section-wrap flush-top">
+    <div class="grid two">
+      <div class="image-card"><img src="/assets/images/bedrooms/primary-suite-bed.jpeg" alt="Primary suite at 1 Woodland Drive" loading="lazy" /></div>
+      <div class="image-card"><img src="/assets/images/bathrooms/guest-bath-vanity.jpeg" alt="Updated guest bathroom at 1 Woodland Drive" loading="lazy" /></div>
     </div>
   </section>
 </BaseLayout>

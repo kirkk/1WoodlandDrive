@@ -3,13 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import { property } from '../data/property.js';
 ---
-<BaseLayout title="Gallery">
+<BaseLayout title="Gallery" description="Photo gallery for 1 Woodland Drive in Augusta, Kansas, including exterior, living areas, bedrooms, bathrooms, and shop views.">
   <section class="section-wrap" style="padding-top: 9rem;">
-    <SectionHeader eyebrow="Gallery" title="Current preview images." text="These early exterior photos will be replaced with professional photography soon." />
-    <div class="gallery-grid">
+    <SectionHeader eyebrow="Gallery" title="Updated home preview gallery." text="These seller-provided preview photos now include staged interior spaces, bathrooms, bedrooms, exterior views, and the detached garage/shop. Professional photography can replace or supplement these images when available." />
+    <div class="gallery-grid gallery-grid-large">
       {property.gallery.map((image) => (
-        <a class="gallery-item" href={image.src} target="_blank">
-          <img src={image.src} alt={image.title} loading="lazy" />
+        <a class="gallery-item" href={image.src} target="_blank" aria-label={`Open larger image: ${image.title}`}>
+          <img src={image.src} alt={image.alt || image.title} loading="lazy" />
           <div><span>{image.category}</span><strong>{image.title}</strong></div>
         </a>
       ))}
