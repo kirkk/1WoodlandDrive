@@ -33,10 +33,10 @@ export const property = {
       alt: 'Twilight exterior view of 1 Woodland Drive showing the home, attached garage, and detached shop'
     },
     {
-      src: '/assets/images/shop/street-view-shop.jpeg',
+      src: '/assets/images/shop/shop-01.jpeg',
       title: 'Detached Garage/Shop and Attached Garage',
       category: 'Shop & Garage',
-      alt: 'Street view showing the detached garage shop and attached garage at 1 Woodland Drive'
+      alt: 'Evening view showing the detached garage/shop and attached garage at 1 Woodland Drive'
     },
     {
       src: '/assets/images/hero/twilight-front.jpeg',
