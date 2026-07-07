@@ -4,8 +4,9 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { property } from '../data/property.js';
 ---
 <BaseLayout title="Gallery" description="Photo gallery for 1 Woodland Drive in Augusta, Kansas, including exterior, living areas, bedrooms, bathrooms, and shop views.">
-  <section class="section-wrap" style="padding-top: 9rem;">
-    <SectionHeader eyebrow="Gallery" title="Updated home preview gallery." text="These seller-provided preview photos now include staged interior spaces, bathrooms, bedrooms, exterior views, and the detached garage/shop. Professional photography can replace or supplement these images when available." />
+  <section class="hero compact" style={`--hero-image: url('/assets/images/hero/twilight-front.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Gallery</p><h1>Updated home preview gallery.</h1></div></section>
+  <section class="section-wrap">
+    <SectionHeader title="A look inside and out." text="These seller-provided preview photos now include staged interior spaces, bathrooms, bedrooms, exterior views, and the detached garage/shop. Professional photography can replace or supplement these images when available." />
     <div class="gallery-grid gallery-grid-large">
       {property.gallery.map((image) => (
         <a class="gallery-item" href={image.src} target="_blank" aria-label={`Open larger image: ${image.title}`}>

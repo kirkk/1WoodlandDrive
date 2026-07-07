@@ -4,10 +4,11 @@ import SectionHeader from '../components/SectionHeader.astro';
 import { property } from '../data/property.js';
 ---
 <BaseLayout title="Contact">
-  <section class="section-wrap" style="padding-top: 9rem;">
+  <section class="hero compact" style={`--hero-image: url('/assets/images/exterior/garage-evening.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Contact</p><h1>Request details or schedule a showing.</h1></div></section>
+  <section class="section-wrap">
     <div class="split">
       <div>
-        <SectionHeader eyebrow="Contact" title="Request details or schedule a showing." text="Use the placeholder contact below for now. This can be updated in one place when final listing contact details are ready." />
+        <SectionHeader title="Get in touch." text="Use the placeholder contact below for now. This can be updated in one place when final listing contact details are ready." />
         <p><strong>Email:</strong> <a href={`mailto:${property.contactEmail}`}>{property.contactEmail}</a></p>
       </div>
       <div class="card">
