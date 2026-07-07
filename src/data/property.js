@@ -25,7 +25,7 @@ export const property = {
     'Landscape lighting and upgraded landscaping',
     'Outdoor fire pit and entertaining area',
     'Detached 1,660 sq ft climate-controlled shop with half bath',
-    'Space for 6+ vehicles plus separate mower/storage bay',
+    'Separate mower/storage bay',
     'One-year deluxe home warranty included',
     'Termite warranty included',
     'One year of professional lawn treatments included'
