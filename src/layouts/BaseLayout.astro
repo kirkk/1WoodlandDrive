@@ -3,6 +3,31 @@ import '../styles/global.css';
 import { property, navItems } from '../data/property.js';
 const { title, description = 'A beautifully renovated custom ranch on one acre in Augusta, Kansas with a rare detached climate-controlled shop.' } = Astro.props;
 const pageTitle = title ? `${title} | ${property.name}` : `${property.name} | Renovated Custom Ranch in Augusta, Kansas`;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateListing',
+  name: pageTitle,
+  url: 'https://1woodlanddrive.com/',
+  image: 'https://1woodlanddrive.com/assets/images/hero/shop-and-home-evening.jpeg',
+  about: {
+    '@type': 'SingleFamilyResidence',
+    name: property.name,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: property.address,
+      addressLocality: property.city,
+      addressRegion: property.state,
+      postalCode: property.zip,
+      addressCountry: 'US'
+    },
+    numberOfBedrooms: Number(property.bedrooms),
+    numberOfBathroomsTotal: Number(property.bathrooms),
+    numberOfRooms: Number(property.bedrooms) + Number(property.bathrooms),
+    floorSize: { '@type': 'QuantitativeValue', value: 2700, unitCode: 'FTK' },
+    lotSize: { '@type': 'QuantitativeValue', value: 1, unitText: 'acre' },
+    yearBuilt: Number(property.yearBuilt)
+  }
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -17,6 +42,10 @@ const pageTitle = title ? `${title} | ${property.name}` : `${property.name} | Re
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://1woodlanddrive.com/assets/images/hero/shop-and-home-evening.jpeg" />
     <meta name="theme-color" content="#1f2326" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

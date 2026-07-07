@@ -8,6 +8,8 @@ export const property = {
   yearBuilt: '1974',
   acreage: '1 acre',
   squareFeet: 'Approx. 2,700 sq ft',
+  bedrooms: '3',
+  bathrooms: '3',
   contactEmail: 'rita@ritabagby.com',
   contactPhone: '',
   heroImage: '/assets/images/hero/shop-and-home-evening.jpeg',
@@ -27,16 +29,16 @@ export const property = {
   ],
   gallery: [
     {
-      src: '/assets/images/exterior/shop-and-home-evening.jpeg',
-      title: 'Twilight Front Elevation',
-      category: 'Exterior & Grounds',
-      alt: 'Twilight exterior view of 1 Woodland Drive showing the home, attached garage, and detached shop'
-    },
-    {
       src: '/assets/images/shop/shop-01.jpeg',
       title: 'Detached Garage/Shop and Attached Garage',
       category: 'Shop & Garage',
       alt: 'Evening view showing the detached garage/shop and attached garage at 1 Woodland Drive'
+    },
+    {
+      src: '/assets/images/shop/street-view-shop.jpeg',
+      title: 'Street View with Shop',
+      category: 'Shop & Garage',
+      alt: 'Street view showing the detached shop alongside the home at 1 Woodland Drive'
     },
     {
       src: '/assets/images/hero/twilight-front.jpeg',
@@ -103,12 +105,6 @@ export const property = {
       title: 'Guest Bath',
       category: 'Bathrooms',
       alt: 'Updated guest bathroom with white vanity, patterned feature wall, and tub shower'
-    },
-    {
-      src: '/assets/images/exterior/garage-evening.jpeg',
-      title: 'Attached Garage Entry',
-      category: 'Exterior & Grounds',
-      alt: 'Evening view of the attached garage and driveway'
     }
   ]
 };
