@@ -26,7 +26,9 @@ export const property = {
     'Outdoor fire pit and entertaining area',
     'Detached climate-controlled shop with bathroom',
     'Space for 6+ vehicles plus separate mower/storage bay',
-    'One-year deluxe home warranty included'
+    'One-year deluxe home warranty included',
+    'Termite warranty included',
+    'One year of professional lawn treatments included'
   ],
   gallery: [
     {
