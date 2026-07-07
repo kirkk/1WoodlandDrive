@@ -20,6 +20,7 @@ export const property = {
     'New appliances plus main-floor washer and dryer',
     'Fresh interior and exterior paint',
     'New HVAC system',
+    'New well-fed lawn sprinkler system installed summer 2025',
     'One-acre irrigated lot with private well',
     'Landscape lighting and upgraded landscaping',
     'Outdoor fire pit and entertaining area',
