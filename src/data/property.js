@@ -24,7 +24,7 @@ export const property = {
     'One-acre irrigated lot with private well',
     'Landscape lighting and upgraded landscaping',
     'Outdoor fire pit and entertaining area',
-    'Detached climate-controlled shop with bathroom',
+    'Detached 1,660 sq ft climate-controlled shop with half bath',
     'Space for 6+ vehicles plus separate mower/storage bay',
     'One-year deluxe home warranty included',
     'Termite warranty included',
