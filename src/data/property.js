@@ -12,7 +12,7 @@ export const property = {
   bathrooms: '3',
   contactEmail: 'rita@ritabagby.com',
   contactPhone: '',
-  heroImage: '/assets/images/hero/twilight-shop-and-home.jpeg',
+  heroImage: '/assets/images/hero/twilight-shop-and-home-2026.jpeg',
   highlights: [
     'Beautifully remodeled custom ranch',
     'Finished lower level with office and adjoining private bath',
