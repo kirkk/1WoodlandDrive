@@ -4,7 +4,7 @@ export const property = {
   city: 'Augusta',
   state: 'KS',
   zip: '67010',
-  status: 'Coming Soon',
+  status: 'Pending',
   yearBuilt: '1974',
   acreage: '1 acre',
   squareFeet: 'Approx. 2,700 sq ft',
