@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
+import { property } from '../data/property.js';
 ---
 <BaseLayout title="The Shop">
-  <section class="hero compact" style={`--hero-image: url('/assets/images/exterior/front-drive-day.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">Shop & garage</p><h1>More than a garage.</h1></div></section>
+  <section class="hero compact" style={`--hero-image: url('/assets/images/exterior/front-drive-day.jpeg')`}><div class="hero-overlay"></div><div class="hero-content section-wrap"><p class="eyebrow">{property.status} · Shop & garage</p><h1>More than a garage.</h1></div></section>
   <section class="section-wrap">
     <div class="split">
       <div>
